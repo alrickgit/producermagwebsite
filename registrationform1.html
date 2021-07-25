@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='registrationform1.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Trirong:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Montserrat&family=Trirong:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href = "images/homepage/logo.png">
+
+</head>
+<body>
+    <div class="video-box">
+
+        <div class="texture"></div>
+        <video autoplay loop muted preload="auto" >
+            <source src="video/skrillex same place_Trimfinal.mp4" type="video/mp4">
+        </video>
+        <div class="logo">
+                <img src="images/homepage/logo.png" alt="logo">
+        </div>
+        <div class="caption">
+            
+            <div class="form-box">
+                <form action="insert.php" method="POST">
+                   
+                    <div class="form-cont">
+                        <h2>REGISTER</h2>
+                        <hr>
+                        <div class="box"><br><br><br><br><br><br><br><br>
+                            <label for="fname">
+                                <span>First Name</span>
+                                </label><br><br>
+                                <i class="fa fa-user-circle-o"></i>
+                                <input type="text" name="fname" id="fname" required>
+    
+                                <label for="lname"><br><br><br><br>
+                                    <span>Last Name</span>
+                                </label><br><br>
+                                <i class="fa fa-user-circle-o"></i>
+                                <input type="text" name="lname" id="lname" required>
+    
+                                <label for="email"><br><br><br><br>
+                                    <span>Email Address</span>
+                                </label><br><br>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <input type="text" name="email" id="email" required>
+
+                        </div>
+                        <div class="box2">
+
+                            <label for="username"><br><br><br><br>
+                                    <span>Username</span>
+                                </label><br><br>
+                                <i class="fa fa-user-o"></i>
+                                <input type="text" name="username" id="username" required>
+    
+                                <label for="password"><br><br><br><br>
+                                    <span>Password</span>
+                                </label><br><br>
+                                <i class="fa fa-key"></i>
+                                <input type="password" name="password" id="password" class="password" required required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+    
+                                <span class="eye" onclick="myFunction()">
+                                    <i id="hide1" class="fa fa-eye"></i>
+                                    <i id="hide2" class="fa fa-eye-slash"></i>
+                                </span> 
+    
+                                <label for="cpass"><br><br><br><br>
+                                    <span>Confirm Password</span>
+                                </label><br><br>
+                                <i class="fa fa-key"></i>
+                                <input type="password" name="cpass" id="cpass" class="cpass" required required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+    
+                                <span class="eye" onclick="myFunction2()">
+                                    <i id="hide3" class="fa fa-eye"></i>
+                                    <i id="hide4" class="fa fa-eye-slash"></i>
+                                </span> 
+                        </div>
+                        
+                        <div class="input-box1">
+                            <button class="submit" type="submit">Sign Up</button>
+                        </div> 
+                    </div>
+                </form>
+                
+            </div>
+                     
+      </div>
+
+      <div class="n-bar">
+        <div class="n-link">
+            <a href="registrationform.html">Vote</a>
+        </div>
+        <div class="n-link">
+            <a href="prev-list.html">Top 30 List</a>
+        </div>
+        <div class="n-link">
+            <a href="about.html">About Us</a>
+        </div>
+        <!-- <div class="n-link">
+            <a href="loginform.html">Login</a>
+        </div> -->
+
+      </div>
+    </div>
+
+</body>
+</html>

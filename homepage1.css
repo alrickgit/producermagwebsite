@@ -1,0 +1,173 @@
+.video-box >video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    object-fit: cover;
+  }
+
+  .video-box{
+      height: 100vh;
+      width: 100%;
+      background-color: rgb(90, 20, 90);
+      display: flex;
+      align-items: center;
+    justify-content: center;
+  }
+
+.video-box .texture {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:15;
+    background:url('images/homepage/broken-noise.png');
+}
+
+.video-box .caption {
+
+    position:relative;
+    z-index:20;
+    text-align:center;
+    color:#ffffff;
+    bottom:10px;
+}
+
+.video-box::after {
+    width:100%;
+    height:100%;
+    content: '';
+    position:absolute;
+    z-index:10;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.2)
+}
+
+
+.video-box .caption h1 {
+
+    text-transform: uppercase;
+    font-size:3.5em;
+    font-family: 'Marcellus SC', serif;
+    margin-bottom:0.5rem;
+}
+
+.n-bar{
+    z-index: 21;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    bottom: 88%;
+    left: 66%;
+
+}
+.n-bar > .n-link{
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.n-link{
+    height: 23px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s; 
+}
+
+.n-link a{
+    text-decoration: none;
+    color:white;
+    transition: color 0.5s;
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 50;
+    font-size:1.2em;
+    letter-spacing: 6px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:100px;
+    font-size:1.3em;
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+    text-decoration: none;
+    /* position: relative; */
+    /* top: 200%; */
+    /* left: 30%; */
+}
+
+.caption> a{
+    text-decoration: none;
+    color: white;
+}
+
+.caption> a:hover{
+    color: rgb(136, 132, 132);
+}
+
+.n-link a:hover{
+    color: rgb(136, 132, 132);
+    
+}
+
+.n-link:hover{
+    border-bottom: 1px solid rgb(136, 132, 132);
+    border-bottom: 1px solid transparent;
+}
+
+.arrow {
+    display: flex;
+    /* position: absolute;
+    top: 250%; */
+    justify-content: center;
+    font-size: 24px;
+    z-index:20;
+    
+}
+body{
+    overflow: hidden;
+}
+
+.logo{
+    z-index: 22;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 87%;
+    right:34%;
+}
+.logo img{
+   filter: invert(1);
+   width: 9%;
+   height: 9%;
+}
+
+.logo img:hover{
+   transform: scale(1.1);
+ }
+@media screen and (min-width:992px)
+{
+      .video-box .caption h1 {
+            font-size:3.8rem;
+      }
+}
+
+
+
+@media screen and (min-width:1200px)
+{
+      .video-box .caption h1 {
+            font-size:4rem;
+      }
+}

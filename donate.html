@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Donate</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='donate.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Trirong:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Montserrat&family=Trirong:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href = "images/homepage/logo.png">
+
+</head>
+<body>
+    <div class="video-box">
+
+        <div class="texture"></div>
+        <video autoplay loop muted preload="auto" >
+            <source src="video/trim2.mp4" type="video/mp4">
+        </video>
+        <div class="logo">
+
+                <img src="images/homepage/logo.png" alt="logo" onclick="home();">
+            
+        </div>
+        <div class="caption">
+            <form action="donate.php" method="POST" autocomplete="off">
+                <h1>D O N A T E</h1>
+                <h2>select which artist you want to donate to</h2>
+                <select name="choice" id="choice" required>
+                    <option value="1" id="1">ALKYN</option>
+                    <option value="2" id="2">BAYNK</option>
+                    <option value="3" id="3">BLEU CLAIR</option>
+                    <option value="4" id="4">CURBI</option>
+                    <option value="5" id="5">DUSKUS</option>
+                    <option value="6" id="6">EZZYLAND</option>
+                    <option value="7" id="7">FLUME</option>
+                    <option value="8" id="8">FORMER HERO</option>
+                    <option value="9" id="9">FROZT</option>
+                    <option value="10" id="10">GRAPE MILK</option>
+                    <option value="11" id="11">ILLENIUM</option>
+                    <option value="12" id="12">KRMA</option>
+                    <option value="13" id="13">LAXCITY</option>
+                    <option value="14" id="14">LOUIS THE CHILD</option>
+                    <option value="15" id="15">MAAHIR</option>
+                    <option value="16" id="16">MOORE KISMET</option>
+                    <option value="17" id="17">PAPA KHAN</option>
+                    <option value="18" id="18">PORTER ROBINSON</option>
+                    <option value="19" id="19">QUIET BISON</option>
+                    <option value="20" id="20">RAPTURES</option>
+                    <option value="21" id="21">RL GRIME</option>
+                    <option value="22" id="22">ROBU</option>
+                    <option value="23" id="23">SAN HOLO</option>
+                    <option value="24" id="24">SERION</option>
+                    <option value="25" id="25">SOUNDSOFJOY_</option>
+                    <option value="26" id="26">THREE OSCILLATORS</option>
+                    <option value="27" id="27">TODD HELDER</option>
+                    <option value="28" id="28">TYNAN</option>
+                    <option value="29" id="29">VEER</option>
+                    <option value="30" id="30">WHAT SO NOT</option>
+                </select>
+                <h2><br><br>how much do you want to donate</h2>
+                <input type="number" id="damount" name="damount" placeholder="For Eg: $300" required><br><br><br><br>
+                <button class="submit" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="n-bar">
+        <div class="n-link">
+            <a href="registrationform.html">Vote</a>
+        </div>
+        <div class="n-link">
+            <a href="prev-list.html">Top 30 List</a>
+        </div>
+        <div class="n-link">
+            <a href="about.html">About Us</a>
+        </div>
+        <!-- <div class="n-link">
+            <a href="loginform.html">Login</a>
+        </div> -->
+
+      </div>
+    </div>
+    <script>
+        function home(){
+            window.location="homepage1.html";
+        }
+    </script>
+</body>
+</html>

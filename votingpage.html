@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Voting Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel='stylesheet' href='votingpage.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Trirong:wght@500&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "images/homepage/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Montserrat&family=Trirong:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="leftside">
+                <div class="nav-link">
+                    <a href="homepage1.html">P R O D U C E R &nbsp; M A G</a>
+
+                </div>
+            </div>
+ 
+            <div class="rightside">
+
+                <div class="nav-link">
+                    <a href="registrationform.html">Vote</a>
+                </div>
+                <div class="nav-link">
+                    <a href="prev-list.html">Top 30 List</a>
+                </div>
+                <div class="nav-link">
+                    <a href="about.html">About Us</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mainblock">
+            <div class="box1">
+               
+            </div>
+
+            <div class="box2">
+                <div class="form-box">
+                    <form action="vote.php" method="POST" autocomplete="off">
+                        <h2>VOTE</h2>
+                        <hr>
+                        <div class="form-cont">
+                            <div class="input-box">
+                                <label for="fchoice">
+                                <span>First Choice</span>
+                                </label>
+                                <i class="fa fa-user-circle-o"></i>
+                                <select name="fchoice" id="fchoice">
+                                    <option value="1" id="1">ALKYN</option>
+                                    <option value="2" id="2">BAYNK</option>
+                                    <option value="3" id="3">BLEU CLAIR</option>
+                                    <option value="4" id="4">CURBI</option>
+                                    <option value="5" id="5">DUSKUS</option>
+                                    <option value="6" id="6">EZZYLAND</option>
+                                    <option value="7" id="7">FLUME</option>
+                                    <option value="8" id="8">FORMER HERO</option>
+                                    <option value="9" id="9">FROZT</option>
+                                    <option value="10" id="10">GRAPE MILK</option>
+                                    <option value="11" id="11">ILLENIUM</option>
+                                    <option value="12" id="12">KRMA</option>
+                                    <option value="13" id="13">LAXCITY</option>
+                                    <option value="14" id="14">LOUIS THE CHILD</option>
+                                    <option value="15" id="15">MAAHIR</option>
+                                    <option value="16" id="16">MOORE KISMET</option>
+                                    <option value="17" id="17">PAPA KHAN</option>
+                                    <option value="18" id="18">PORTER ROBINSON</option>
+                                    <option value="19" id="19">QUIET BISON</option>
+                                    <option value="20" id="20">RAPTURES</option>
+                                    <option value="21" id="21">RL GRIME</option>
+                                    <option value="22" id="22">ROBU</option>
+                                    <option value="23" id="23">SAN HOLO</option>
+                                    <option value="24" id="24">SERION</option>
+                                    <option value="25" id="25">SOUNDSOFJOY_</option>
+                                    <option value="26" id="26">THREE OSCILLATORS</option>
+                                    <option value="27" id="27">TODD HELDER</option>
+                                    <option value="28" id="28">TYNAN</option>
+                                    <option value="29" id="29">VEER</option>
+                                    <option value="30" id="30">WHAT SO NOT</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="schoice">
+                                    <span>Second Choice</span>
+                                </label>
+                                <i class="fa fa-user-circle-o"></i>
+                                <select name="schoice" id="schoice">
+                                    <option value="1" id="1">ALKYN</option>
+                                    <option value="2" id="2">BAYNK</option>
+                                    <option value="3" id="3">BLEU CLAIR</option>
+                                    <option value="4" id="4">CURBI</option>
+                                    <option value="5" id="5">DUSKUS</option>
+                                    <option value="6" id="6">EZZYLAND</option>
+                                    <option value="7" id="7">FLUME</option>
+                                    <option value="8" id="8">FORMER HERO</option>
+                                    <option value="9" id="9">FROZT</option>
+                                    <option value="10" id="10">GRAPE MILK</option>
+                                    <option value="11" id="11">ILLENIUM</option>
+                                    <option value="12" id="12">KRMA</option>
+                                    <option value="13" id="13">LAXCITY</option>
+                                    <option value="14" id="14">LOUIS THE CHILD</option>
+                                    <option value="15" id="15">MAAHIR</option>
+                                    <option value="16" id="16">MOORE KISMET</option>
+                                    <option value="17" id="17">PAPA KHAN</option>
+                                    <option value="18" id="18">PORTER ROBINSON</option>
+                                    <option value="19" id="19">QUIET BISON</option>
+                                    <option value="20" id="20">RAPTURES</option>
+                                    <option value="21" id="21">RL GRIME</option>
+                                    <option value="22" id="22">ROBU</option>
+                                    <option value="23" id="23">SAN HOLO</option>
+                                    <option value="24" id="24">SERION</option>
+                                    <option value="25" id="25">SOUNDSOFJOY_</option>
+                                    <option value="26" id="26">THREE OSCILLATORS</option>
+                                    <option value="27" id="27">TODD HELDER</option>
+                                    <option value="28" id="28">TYNAN</option>
+                                    <option value="29" id="29">VEER</option>
+                                    <option value="30" id="30">WHAT SO NOT</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="tchoice">
+                                    <span>Third Choice</span>
+                                </label>
+                                <i class="fa fa-user-circle-o"></i>
+                                <select name="tchoice" id="tchoice">
+                                    <option value="1" id="1">ALKYN</option>
+                                    <option value="2" id="2">BAYNK</option>
+                                    <option value="3" id="3">BLEU CLAIR</option>
+                                    <option value="4" id="4">CURBI</option>
+                                    <option value="5" id="5">DUSKUS</option>
+                                    <option value="6" id="6">EZZYLAND</option>
+                                    <option value="7" id="7">FLUME</option>
+                                    <option value="8" id="8">FORMER HERO</option>
+                                    <option value="9" id="9">FROZT</option>
+                                    <option value="10" id="10">GRAPE MILK</option>
+                                    <option value="11" id="11">ILLENIUM</option>
+                                    <option value="12" id="12">KRMA</option>
+                                    <option value="13" id="13">LAXCITY</option>
+                                    <option value="14" id="14">LOUIS THE CHILD</option>
+                                    <option value="15" id="15">MAAHIR</option>
+                                    <option value="16" id="16">MOORE KISMET</option>
+                                    <option value="17" id="17">PAPA KHAN</option>
+                                    <option value="18" id="18">PORTER ROBINSON</option>
+                                    <option value="19" id="19">QUIET BISON</option>
+                                    <option value="20" id="20">RAPTURES</option>
+                                    <option value="21" id="21">RL GRIME</option>
+                                    <option value="22" id="22">ROBU</option>
+                                    <option value="23" id="23">SAN HOLO</option>
+                                    <option value="24" id="24">SERION</option>
+                                    <option value="25" id="25">SOUNDSOFJOY_</option>
+                                    <option value="26" id="26">THREE OSCILLATORS</option>
+                                    <option value="27" id="27">TODD HELDER</option>
+                                    <option value="28" id="28">TYNAN</option>
+                                    <option value="29" id="29">VEER</option>
+                                    <option value="30" id="30">WHAT SO NOT</option>
+                                </select>
+                            </div>
+
+                            <!-- <div class="input-box">
+                                <label for="email">
+                                    <span>Email Address</span>
+                                </label>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="username">
+                                    <span>Username</span>
+                                </label>
+                                <i class="fa fa-user-o"></i>
+                                <input type="text" name="username" id="username" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="password">
+                                    <span>Password</span>
+                                </label>
+                                <i class="fa fa-key"></i>
+                                <input type="password" name="password" id="password" class="password" required required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+                                <span class="eye" onclick="myFunction()">
+                                    <i id="hide1" class="fa fa-eye"></i>
+                                    <i id="hide2" class="fa fa-eye-slash"></i>
+                                </span> 
+                            </div> -->
+
+                            
+                            
+                            <div class="input-box1">
+                                <button class="submit" type="submit">Vote</button>
+                            </div>
+                            
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+
+            <div class="box3">
+               
+            </div>
+
+            
+            
+        </div>
+            
+    </div>
+    <script>
+        function myFunction()
+                         {
+                            var x = document.getElementById("password");
+                            var y = document.getElementById("hide1");
+                            var z = document.getElementById("hide2");
+                            if (x.type === "password") {            
+                                x.type = "text"; 
+                                y.style.display = "block";
+                                z.style.display = "none";                   
+                            } 
+                            else {
+                                x.type = "password";
+                                y.style.display = "none";
+                                z.style.display = "block";
+                            }
+                        }
+
+                        $(function () {
+                            $('select').change(function() {
+                            var used = new Set;
+                            $('select').each(function () {
+                                var reset = false;
+                                $('option', this).each(function () {
+                                    var hide = used.has($(this).text());
+                                    if (hide && $(this).is(':selected')) reset = true;
+                                    $(this).prop('hidden', hide);
+                        });
+                        if (reset) $('option:not([hidden]):first', this).prop('selected', true);
+                        used.add($('option:selected', this).text());
+                        });
+                    }).trigger('change'); // run at load
+                    });
+    </script>
+</body>
+</html>
